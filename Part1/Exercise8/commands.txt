@@ -1,0 +1,1 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1$ docker run -v "$(pwd)/Exercise8/logs.txt:/usr/app/logs.txt" devopsdockeruh/first_volume_exercise

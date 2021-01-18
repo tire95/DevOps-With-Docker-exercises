@@ -1,0 +1,2 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise13$ docker build -t exercise13 .
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise13$ docker container run -d -p 8080:8080 exercise13

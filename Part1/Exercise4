@@ -1,0 +1,13 @@
+timo@timo-VirtualBox:~$ docker run -d --rm -it --name ex14 devopsdockeruh/exec_bash_exercise
+f51af081f408533b2bf4f46e2e28e8f0b73a66ad6974653d15ea3d1718168409
+timo@timo-VirtualBox:~$ docker exec -it ex14 bash
+root@f51af081f408:/usr/app# tail -f ./logs.txt
+Sat, 02 Jan 2021 16:32:21 GMT
+Sat, 02 Jan 2021 16:32:24 GMT
+Secret message is:
+"Docker is easy"
+^C
+root@f51af081f408:/usr/app# exit
+exit
+timo@timo-VirtualBox:~$ 
+

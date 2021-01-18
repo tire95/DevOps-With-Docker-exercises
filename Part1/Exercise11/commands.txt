@@ -1,0 +1,2 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise11$ docker build -t exercise11 .
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise11$ docker run -d -it -p 8000:8000 -v "$(pwd)/logs.txt:/usr/src/app/logs.txt" exercise11

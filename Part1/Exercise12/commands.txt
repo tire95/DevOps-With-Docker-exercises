@@ -1,0 +1,4 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise12/front$ docker build -t frontend .
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise12/front$ docker run -d -it -p 5000:5000 frontend
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise12/back$ docker build -t backend .
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise12/back$ docker run -d -it -p 8000:8000 -v "$(pwd)/logs.txt:/usr/src/app/logs.txt" backend

@@ -1,0 +1,6 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1$ docker container run -d -p 80 devopsdockeruh/ports_exercise
+ba21de869c86117556b4c761ff1cf5aade939a9a2de88301a38cc031ed6b0bc2
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1$ docker container port ba21
+80/tcp -> 0.0.0.0:49153
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1$ curl localhost:49153
+Ports configured correctly!!

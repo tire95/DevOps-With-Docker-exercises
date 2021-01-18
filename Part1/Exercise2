@@ -1,0 +1,6 @@
+timo@timo-VirtualBox:~$ docker ps -as
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+timo@timo-VirtualBox:~$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+timo@timo-VirtualBox:~$ 
+

@@ -1,0 +1,36 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise7$ docker build -t curler .
+Sending build context to Docker daemon  3.072kB
+Step 1/6 : FROM ubuntu:16.04
+ ---> 9499db781771
+Step 2/6 : WORKDIR /mydir
+ ---> Using cache
+ ---> 905b70556122
+Step 3/6 : RUN apt-get update && apt-get install -y curl
+ ---> Using cache
+ ---> c8a12296c5d9
+Step 4/6 : COPY script.sh script.sh
+ ---> Using cache
+ ---> 68fc1e498e4e
+Step 5/6 : RUN chmod +x script.sh
+ ---> Running in 4c2a4fec3bd7
+Removing intermediate container 4c2a4fec3bd7
+ ---> 562722133875
+Step 6/6 : CMD ["./script.sh"]
+ ---> Running in e0bb49e2b715
+Removing intermediate container e0bb49e2b715
+ ---> ce31989d0bc9
+Successfully built ce31989d0bc9
+Successfully tagged curler:latest
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise7$ docker run -it curler
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise7$ 
+

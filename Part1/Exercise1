@@ -1,0 +1,6 @@
+timo@timo-VirtualBox:~$ docker ps -a
+CONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS                          PORTS     NAMES
+8258cbc76e86   postgres   "docker-entrypoint.s…"   About a minute ago   Exited (1) About a minute ago             brave_mestorf
+b80da8a80806   centos     "/bin/bash"              2 minutes ago        Exited (0) 2 minutes ago                  lucid_volhard
+8b648c3fd3d8   nginx      "/docker-entrypoint.…"   5 minutes ago        Up 5 minutes                    80/tcp    nice_kirch
+

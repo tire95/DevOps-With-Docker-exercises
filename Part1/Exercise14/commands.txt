@@ -1,0 +1,3 @@
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise14$ docker build -t exercise14 .
+timo@timo-VirtualBox:~/DevOpsWithDocker/Part1/Exercise14$ docker container run -d -p 3000:3000 exercise14
+
